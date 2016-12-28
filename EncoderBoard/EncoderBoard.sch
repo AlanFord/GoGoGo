@@ -51,7 +51,8 @@ P 4930 3590
 F 0 "U1" H 4890 3780 50  0000 L CNN
 F 1 "RPI-579N1" H 4740 3390 50  0000 L CNN
 F 2 "EncoderBoard:RPI-579N1" H 4730 3390 50  0001 L CIN
-F 3 "" H 4930 3590 50  0000 L CNN
+F 3 "http://www.mouser.com/ds/2/348/rpi-579n1-208956.pdf" H 4930 3590 50  0001 L CNN
+F 4 "Value" H 4930 3590 60  0001 C CNN "Fieldname"
 	1    4930 3590
 	1    0    0    -1  
 $EndComp
@@ -86,8 +87,6 @@ Wire Wire Line
 	4630 3380 4630 3490
 Wire Wire Line
 	4630 3690 4630 3830
-Wire Wire Line
-	3750 3830 5230 3830
 Connection ~ 5230 3830
 $Comp
 L R R1
@@ -100,43 +99,10 @@ F 3 "" H 4630 3230 50  0000 C CNN
 	1    4630 3230
 	1    0    0    -1  
 $EndComp
-$Comp
-L CONN_01X02 P1
-U 1 1 585FE506
-P 3800 2800
-F 0 "P1" H 3800 2950 50  0000 C CNN
-F 1 "CONN_01X02" V 3900 2800 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 3800 2800 50  0001 C CNN
-F 3 "" H 3800 2800 50  0000 C CNN
-	1    3800 2800
-	0    -1   -1   0   
-$EndComp
-$Comp
-L CONN_01X02 P2
-U 1 1 585FE579
-P 6010 2810
-F 0 "P2" H 6010 2960 50  0000 C CNN
-F 1 "CONN_01X02" V 6110 2810 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 6010 2810 50  0001 C CNN
-F 3 "" H 6010 2810 50  0000 C CNN
-	1    6010 2810
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	3750 3000 3750 3830
 Connection ~ 4630 3830
 Wire Wire Line
-	5230 3740 6060 3740
-Wire Wire Line
-	6060 3740 6060 3010
-Connection ~ 5230 3740
-Wire Wire Line
 	5230 3410 5960 3410
-Wire Wire Line
-	5960 3410 5960 3010
 Connection ~ 5230 3410
-Wire Wire Line
-	3850 3000 5230 3000
 Wire Wire Line
 	4630 3080 4630 3000
 Connection ~ 4630 3000
@@ -171,4 +137,33 @@ $EndComp
 Wire Wire Line
 	5540 3250 5540 3410
 Connection ~ 5540 3410
+$Comp
+L CONN_01X03 P1
+U 1 1 58619F19
+P 3130 3290
+F 0 "P1" H 3130 3490 50  0000 C CNN
+F 1 "CONN_01X03" V 3230 3290 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03" H 3130 3290 50  0001 C CNN
+F 3 "" H 3130 3290 50  0000 C CNN
+	1    3130 3290
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3330 3000 5230 3000
+Wire Wire Line
+	3330 3000 3330 3190
+Wire Wire Line
+	3330 3290 4480 3290
+Wire Wire Line
+	4480 3290 4480 3830
+Wire Wire Line
+	4480 3830 5230 3830
+Wire Wire Line
+	5960 3410 5960 4050
+Wire Wire Line
+	5960 4050 3940 4050
+Wire Wire Line
+	3940 4050 3940 3390
+Wire Wire Line
+	3940 3390 3330 3390
 $EndSCHEMATC
